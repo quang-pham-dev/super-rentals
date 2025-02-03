@@ -8,7 +8,7 @@ module('Acceptance | super rentals', function (hooks) {
   test('visiting /', async function (assert) {
     await visit('/');
 
-    assert.strictEqual(currentURL(), '/super-rentals');
+    assert.strictEqual(currentURL(), '/');
     assert.dom('nav').exists();
     assert.dom('h1').hasText('SuperRentals');
     assert.strictEqual(currentURL(), '/');
